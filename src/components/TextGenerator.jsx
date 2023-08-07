@@ -2,6 +2,7 @@ import { HfInference } from "@huggingface/inference";
 import React from "react";
 import { useState } from "react";
 
+
 const TextGenerationForm = () => {
   const huggingFace = new HfInference(process.env.REACT_APP_HF_TOKEN);
   const model = "ayajafar/next-word-prediction";
@@ -23,7 +24,7 @@ const TextGenerationForm = () => {
         data: inputText.trim(),
         model: model,
       });
-      //   console.log(response);
+        console.log(response);
       setResult(response.generated_text);
     } catch (error) {
       console.error("Error making API request:", error);
