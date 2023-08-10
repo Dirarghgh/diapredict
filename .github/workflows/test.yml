@@ -16,24 +16,23 @@ jobs:
         node-version: [14.x, 16.x, 18.x, 20.x]
 
     steps:
-      - uses: actions/checkout@v2
-
-      - name: Cache node modules
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
+      - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'npm'
+      - run: npm --version
+      - run: node --version
+      - run: npm ci
+        timeout-minutes: 10
+      - run: npm run build --if-present
+      - run: npm test
 
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Run ls on node_modules
-        run: ls node_modules/
+      - name: Clear npm cache
+        run: npm cache clean --force
+      - name: Debug environment
+        run: |
+          echo "Node.js version: $(node --version)"
+          echo "npm version: $(npm --version)"
+          echo "List of installed packages:"
+          ls ./node_modules
