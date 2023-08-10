@@ -17,10 +17,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
         with:
-          node-version: '14'
-      - name: Run prettier
-        run: |
-          npm ci
-          npm run prettier-check
+          node-version: ${{ matrix.node-version }}
+      - run: npm --version
+      - run: node --version
+      - run: ls node_modules
+      - run: cat /home/runner/.npm/_logs/2023-08-10T18_49_29_903Z-debug.log
+      - run: npm ci
+      - run: npm run build --if-present
+      - run: npm test
