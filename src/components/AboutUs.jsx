@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../images/image.png";
+import img from "../images/icon-ai-removebg-preview.png";
 import { handleMouseLeave, handleMouseMove } from "./FirstSection"; // Import the function from the FirstSection file
 
 function AboutUs() {

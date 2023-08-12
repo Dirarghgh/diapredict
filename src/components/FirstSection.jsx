@@ -27,9 +27,9 @@ function FirstSection() {
         <MultiImgClf /> */}
    
         
-        <h1>Healthcare's AI</h1>
+        <h1>Healthcare AI</h1>
         <NotesClf />
-        <h4 style={{ marginTop: "20px", fontSize: "1em", fontWeight: 400 }}>
+        <h4 style={{ marginTop: "20px", fontSize: "1em", fontWeight: 500 }}>
           AI-Driven tool for medical tasks such as text generation ,
           classification and much more
         </h4>
