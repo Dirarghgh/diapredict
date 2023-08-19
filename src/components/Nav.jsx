@@ -10,7 +10,7 @@ function Nav({ isNav }) {
             <div className="nav-icon">
               <img src={icon} alt="" />
             </div>
-            <h6>HEALTHCARE AI</h6>
+            <h6>{"heal tech.AI".toUpperCase()}</h6>
           </div>
         </div>
       ) : (
@@ -18,7 +18,7 @@ function Nav({ isNav }) {
           <div className="nav-item">
             <div className="nav-icon">
               <img src={icon} alt="" />
-              <p>&copy; 2023 HEALTHCARE AI . All rights reserved</p>
+              <p>&copy; 2023 {"heal tech.AI".toUpperCase()} . All rights reserved</p>
             </div>
           </div>
         </div>

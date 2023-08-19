@@ -1,7 +1,7 @@
 import React from "react";
 import pic from "../images/3276005.jpg";
-import MultiImgClf from "./MultiImgClf";
-import NotesClf from "./NotesClf";
+
+
 
 const handleMouseMove = (e, id) => {
   const { clientX, clientY } = e;
@@ -23,14 +23,9 @@ function FirstSection() {
   return (
     <div className="parent">
       <div>
-        {/*         
-        <MultiImgClf /> */}
-   
-        
-        <h1>Healthcare AI</h1>
-        <NotesClf />
-        <h4 style={{ marginTop: "20px", fontSize: "1em", fontWeight: 500 }}>
-          AI-Driven tool for medical tasks such as text generation ,
+        <h1 className="title">{"heal tech.AI".toUpperCase()}</h1>
+        <h4 style={{ marginTop: "20px", fontSize: "1.5em", fontWeight: 200 }}>
+          AI-Driven tool for medical tasks such as text generation ,<br/>
           classification and much more
         </h4>
 

@@ -18,8 +18,6 @@ function Features() {
               <li>Saves time by quickly providing accurate medical text predictions</li>
               <li>Highly reliable in suggesting medical terms and context-specific information.</li>
               <li>Tailored to the medical domain for precise and consistent results</li>
-              {/* TODO:  Add voice input feature*/}
-
             </ul>
 
             <div className="btns try-btn">

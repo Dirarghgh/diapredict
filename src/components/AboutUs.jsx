@@ -27,7 +27,6 @@ function AboutUs() {
               </h3>
             </div>
           </div>
-          {/* <hr /> */}
         </div>
       </div>
     </>

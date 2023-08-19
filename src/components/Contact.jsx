@@ -8,7 +8,7 @@ function ContactUs() {
       <center style={{ color: "white" }}>
         <h1>Contact Us</h1>
         <h2>Feel Free to contact us</h2>
-        <hr />
+        <hr className="hr" />
       </center>
       <div className="contant-section">
         <div className="contact-item">
@@ -42,7 +42,7 @@ function ContactUs() {
                 required
               ></textarea>
             </div>
-
+            
             <div className="send">
               <input type="submit" value="Send" className="btns" id="submit-btn" />
             </div>
