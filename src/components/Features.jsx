@@ -7,12 +7,12 @@ function Features() {
       <div className="services" style={{ color: "white" }} id="start-now">
         <center style={{ color: "white" }}>
           <h1>Our Services</h1>
-          <h2>Choose your model and start now</h2>
+          <h2>Choose your service and start now</h2>
           <hr />
         </center>
 
         <div className="wrapper">
-          <div className="item">
+          {/* <div className="item">
             <h1>Text Generation</h1>
             <ul>
               <li>Saves time by quickly providing accurate medical text predictions</li>
@@ -26,37 +26,34 @@ function Features() {
               </div>
             </div>
             
-          </div>
-
-
+          </div> */}
           <div className="item">
-            <h1>Text summarization</h1>
-
+            <h1>Diabetic Retinopathy </h1>
             <ul>
-              <li>Quickly extracts key information from lengthy texts</li>
-              <li>Provides easy access to relevant details</li>
-              <li>Effective Decision Making, Enables efficient decision-making through concise summaries</li>
+              <li> Quickly provides precise assessments of diabetic retinopathy through advanced AI analysis.</li>
+              <li>Offers dependable identification of relevant medical conditions and terms, enhancing diagnostic accuracy.</li>
+              <li> Designed specifically for diabetic retinopathy, ensuring consistency and precision in results.</li>
             </ul>
 
             <div className="btns try-btn">
               <div>
-                <Link to="/text-summarization">Try now</Link>
+                <Link to="/image-class">Try now</Link>
               </div>
             </div>
+            
           </div>
 
 
-
           <div className="item">
-            <h1>Brain tumor classification </h1>
+            <h1>Diabetes prediction </h1>
             <ul>
-              <li>Provides precise and timely brain tumor classification for effective treatment planning</li>
-              <li>Rapid processing saves valuable time in tumor assessment</li>
-              <li>Minimizing patient discomfort while maintaining accuracy</li>
+              <li> Our diabetes prediction service uses AI to analyze health data, enabling early identification of potential diabetes risk before symptoms appear.</li>
+              <li>Helps individuals and doctors take early action to manage health.</li>
+              <li>Uses data patterns to predict diabetes reliably.</li>
             </ul>
             <div className="btns try-btn">
               <div>
-                <Link to="/image-classification">Try now</Link>
+                <Link to="/predictDiabetes">Try now</Link>
               </div>
             </div>
           </div>

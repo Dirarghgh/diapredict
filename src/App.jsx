@@ -7,8 +7,10 @@ import { HfInference } from "@huggingface/inference";
 import AboutUs from "./components/AboutUs";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Main from "./components/Main";
-import TextSummarization from "./components/TextSumerization";
-import ImageClassifier from "./components/ImageClssifier";
+import Predict from "./components/Predict";
+import ImageClassifier from "./components/ImageClassifier";
+
+
 
 function App() {
   return (
@@ -18,11 +20,11 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/text-generation" element={<TextGenerator />} />
 
-          <Route path="/text-summarization" element={<TextSummarization />} />
+          <Route path="/image-class" element={<ImageClassifier/>} />
 
-          <Route path="/image-classification" element={<ImageClassifier />} />
+          <Route path="/predictDiabetes" element={<Predict/>} />
 
-          {/* <Route path="/other" /> */}
+        
         </Routes>
       </div>
     </BrowserRouter>

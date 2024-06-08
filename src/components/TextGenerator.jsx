@@ -43,15 +43,9 @@ const TextGenerationForm = () => {
 
       <div className="form">
         <form onSubmit={handleSubmit}>
-          <label>
-            <textarea
-              value={inputText}
-              onChange={handleInputChange}
-              rows={4}
-              cols={50}
-              placeholder="Enter your input text here..."
-            />
-          </label>
+         <div>
+          
+         </div>
           <center>
             <button type="submit" className="sumbit-btns" disabled={isLoading}>
               {isLoading ? "Loading..." : "Generate Text"}

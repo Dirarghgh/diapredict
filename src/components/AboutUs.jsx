@@ -19,11 +19,9 @@ function AboutUs() {
               <h1 style={{ margin: 0, padding: 0 }}>About us</h1>
               <hr />
               <h3>
-                We're a group of bioinformatician who're interested in makeing
-                AI based health care applications
-                <br />
-                We build Machine learning models that's specific for medical
-                tasks to enhance the performance of medical field in Iraq
+               
+                We build Deep learning models that's specific for diabetes prediction
+                 to enhance the performance of medical field in Algeria
               </h3>
             </div>
           </div>

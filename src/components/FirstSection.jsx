@@ -23,10 +23,11 @@ function FirstSection() {
   return (
     <div className="parent">
       <div>
-        <h1 className="title">{"heal tech.AI".toUpperCase()}</h1>
+        <h1 className="title">{"DiaPredict ".toUpperCase()}</h1>
         <h4 style={{ marginTop: "20px", fontSize: "1.5em", fontWeight: 200 }}>
-          AI-Driven tool for medical tasks such as text generation ,<br/>
-          classification and much more
+          AI-Driven tool for medical tasks such as Diabetes predicition ,
+         <br/> Diabetic Retinopathy Classification.
+        
         </h4>
 
         <div className="btns">
